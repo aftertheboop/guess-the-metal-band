@@ -1,0 +1,12 @@
+<h3 class="pull-right">Score: <span id="score"><%= score %></span></h3>
+<div class="clearfix"></div>
+<h2 id="response">What is the name of this metal band?</h2>
+<div class="image-container">
+    <img src="<%= band.get('data').logo %>" alt="What is the name of this metal band?" />
+</div>
+<br/>
+<form role="form" id="form" autocomplete="off">
+<input type="text" name="answer" id="answer" class="form-control input-lg required" autocomplete="off" />
+<br/>
+<input type="submit" name="submit" id="submit" value="Submit" style="display: none"/> 
+</form>

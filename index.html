@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head lang="en">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title></title>
+    
+    <meta property="og:url"                content="#" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="What's the name of this metal band?" />
+    <meta property="og:description"        content="Test your metal band knowledge and try to guess the names of random metal bands from just their logos!" />
+    <meta property="og:image"              content="#" />
+    
+    <link rel="stylesheet" href="css/darkly.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+      <div class="container" id="who">
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-1 hidden-xs"></div>
+              <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
+                  <h3>&nbsp;</h3>
+                  <p>This game was made by Rory Molyneux with apologies to <a class="text-warning" href="http://damn.dog" target="_blank">damn.dog</a> and MetalSucks.net's <a class="text-warning" href="http://www.metalsucks.net/tag/completely-unreadable-band-logo-of-the-week/" target="_blank">Completely Unreadable Band Logo of the Week</a></p>
+                  <p><a class="text-warning" href="https://twitter.com/aftertheboop">Follow me on Twitter!</a></p>
+                  <p>&nbsp;</p>
+            <p>This game makes use of:</p>
+            <p>Martin Ivanov's excellent <a href="http://em.wemakesites.net/" target="_blank" class="text-warning" >Encyclopedia Metallum RESTful API</a></p>
+            <p>The Darkly theme from <a href="https://bootswatch.com/" target="_blank" class="text-warning">Bootswatch</a></p>
+            <p><a href="#" onclick="$('#who').slideToggle();" class="text-warning" >Close</a></p>
+            <h3>&nbsp;</h3>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-1 hidden-xs"></div>
+              <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
+                   <p class="pull-left"><a href="#" class="text-warning" onclick="$('#who').slideToggle();" style="position: absolute; top: 30px;">Who made this?</a></p>
+                <div id="game">
+                    <h3 class="pull-right">&nbsp;</span></h3>
+                    <div class="clearfix"></div>
+                    <h2 id="response">What is the name of this metal band?</h2>
+                    <br/>
+                    <p>How well can you read completely random metal band logos?</p>
+                    <br/>
+                    <p>Some are painfully easy while others look like something the cat threw up.</p>
+                    <br/>
+                    <p class="text-center"><button id="playnow" class="btn btn-warning btn-lg">Let's go!</button></p>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div id="ismobile" class="hidden-sm hidden-xs"></div>
+    <script data-main="js/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+  </body>
+</html>
