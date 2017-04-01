@@ -28,8 +28,10 @@ define([
     var appRouter = new AppRouter;
     
     $('#playnow').on('click', function () {
+        $('#playnow').attr('disabled', 'disabled');
         $('#who').slideUp();
-        var homeView = new HomeView();
+        var homeView = new HomeView(); 
+        
     });
 
     Backbone.history.start({ pushState: true});

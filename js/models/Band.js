@@ -5,9 +5,8 @@ define([
   'backbone'
 ], function(_, Backbone) {
   var Band = Backbone.Model.extend({
-      urlRoot: 'model.php',
+      urlRoot: 'http://em.wemakesites.net/band/random?api_key=YOUR_API_KEY&callback=',
       generateFact: function () {
-          
         var band_name = this.get('data').band_name,
             details = this.get('data').details,
             discography = this.get('data').discography,

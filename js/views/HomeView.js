@@ -31,6 +31,8 @@ define([
         if($('body').hasClass('desktop')) {
             $('#answer').focus();
         }
+        
+        $('#next').removeClass('#next');
                         
     },
     events: {
@@ -69,11 +71,16 @@ define([
         
     },
     getBand: function () {
+        
         var view = this;
         
+        $('#next').attr('disabled', 'disabled');
+        
         view.band.fetch({
+            dataType: 'jsonp',
+            crossDomain: true,
             success: function () {
-                                                
+                
                 if(typeof view.band.get('data').logo !== 'undefined') {
                     view.render();
                 } else {
@@ -83,7 +90,7 @@ define([
         });  
     },
     answered: function (correct) {
-        
+                
         var view = this;
         
         if(correct) {
@@ -115,6 +122,7 @@ define([
         };
     },
     gameOver: function (correct) {
+        
         var view = this;
         
         if(correct) {
